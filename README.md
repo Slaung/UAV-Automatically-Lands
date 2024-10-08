@@ -64,3 +64,19 @@
 ![image](https://github.com/Slaung/UAV-Automatically-Lands/blob/main/Figure/Figure12.png)
 
 - 所實驗的無人機設備，包含Jetson Orin NX、C925e webcam、F9P GPS、數傳模組、電池和Pixhawk 6C飛控版。
+
+## 4. 軟體模擬飛行結果(靜態與動態)
+
+- 軟體模擬-靜態目標降落影片 [https://youtu.be/Ru7Ih88LC58](https://youtu.be/Ru7Ih88LC58)
+
+- 軟體模擬-動態目標降落影片 [https://youtu.be/W8m_7iu91D4](https://youtu.be/W8m_7iu91D4)
+
+## 5. 真實硬體飛行結果(靜態與動態)
+
+- 真實硬體-靜態目標降落影片-側錄 [https://youtu.be/Ru7Ih88LC58](https://youtu.be/Y8nC2HKw1uc)
+
+- 真實硬體-靜態目標降落影片-NX畫面 [https://youtu.be/Ru7Ih88LC58](https://youtu.be/rj9Mq0KUjhk)
+
+- 真實硬體-動態目標降落影片-側錄 [https://youtu.be/Ru7Ih88LC58](https://youtu.be/AZ4wHHtOg1c)
+
+- 真實硬體-動態目標降落影片-NX畫面 [https://youtu.be/Ru7Ih88LC58](https://youtu.be/JMSZXIL2BW4)
