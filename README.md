@@ -10,7 +10,7 @@
 ## 1. 系統架構
 整體系統架構如下：
 
-![image](https://github.com/Slaung/UAV-Automatically-Lands/tree/main/Figure/Figure1.png)
+![image]([https://github.com/Slaung/UAV-Automatically-Lands/tree/main/Figure/Figure1.png](https://github.com/Slaung/UAV-Automatically-Lands/blob/main/Figure/Figure1.png))
 
 - 邊緣運算器為Jetson Orin NX，軟體包含ROS系統、攝影機影像擷取、追蹤控制模組、降落控制模組和MAVROS。
 - 無人機飛控版週邊包含GPS、IMU、數傳模組和Battery。
