@@ -1,13 +1,29 @@
 # 無人機自動降落於靜態與動態平台上
 
 目錄：
+- 軟體模擬飛行結果(靜態與動態)
+- 真實硬體飛行結果(靜態與動態)
 - 系統架構
 - 視覺偵測
 - 控制器設計
-- 軟體模擬飛行結果(靜態與動態)
-- 真實硬體飛行結果(靜態與動態)
 
-## 1. 系統架構
+## 1. 軟體模擬飛行結果(靜態與動態)
+
+- [軟體模擬-靜態目標降落影片](https://youtu.be/Ru7Ih88LC58)
+
+- [軟體模擬-動態目標降落影片](https://youtu.be/W8m_7iu91D4)
+
+## 2. 真實硬體飛行結果(靜態與動態)
+
+- [真實硬體-靜態目標降落影片-側錄](https://youtu.be/Y8nC2HKw1uc)
+
+- [真實硬體-靜態目標降落影片-NX畫面](https://youtu.be/rj9Mq0KUjhk)
+
+- [真實硬體-動態目標降落影片-側錄](https://youtu.be/AZ4wHHtOg1c)
+
+- [真實硬體-動態目標降落影片-NX畫面](https://youtu.be/JMSZXIL2BW4)
+
+## 3. 系統架構
 整體系統架構如下：
 
 ![image](https://github.com/Slaung/UAV-Automatically-Lands/blob/main/Figure/Figure1.png)
@@ -21,7 +37,7 @@
 - 追蹤控制模組：使用YOLOv4-tiny進行降落平台之即時目標檢測，並將目標資訊丟給FNN高度預測器預測高度，最後將中心點誤差和所預測高度輸入進追蹤PD控制器，進行控制。
 - 降落控制模組：使用ArUco marker進行檢測，計算中心點誤差和面積大小，最後輸入至降落PD控制器，進行降落控制。
 
-## 2. 視覺偵測
+## 4. 視覺偵測
 
 - 使用YOLOv4-tiny檢測架構，將其實現在Jetson Orin NX上，並使用GPU加速推論，FPS達20左右：
 
@@ -35,7 +51,7 @@
 
 ![image](https://github.com/Slaung/UAV-Automatically-Lands/blob/main/Figure/Figure5.png)
 
-## 3. 控制器設計
+## 5. 控制器設計
 
 - 追蹤PD控制器，包含ROS、YOLOv4-tiny和FNN模型之整合，以控制無人機X, Y, Z軸速度控制進行追蹤：
 
@@ -65,18 +81,6 @@
 
 ![image](https://github.com/Slaung/UAV-Automatically-Lands/blob/main/Figure/Figure12.png)
 
-## 4. 軟體模擬飛行結果(靜態與動態)
 
-- [軟體模擬-靜態目標降落影片](https://youtu.be/Ru7Ih88LC58)
 
-- [軟體模擬-動態目標降落影片](https://youtu.be/W8m_7iu91D4)
 
-## 5. 真實硬體飛行結果(靜態與動態)
-
-- [真實硬體-靜態目標降落影片-側錄](https://youtu.be/Y8nC2HKw1uc)
-
-- [真實硬體-靜態目標降落影片-NX畫面](https://youtu.be/rj9Mq0KUjhk)
-
-- [真實硬體-動態目標降落影片-側錄](https://youtu.be/AZ4wHHtOg1c)
-
-- [真實硬體-動態目標降落影片-NX畫面](https://youtu.be/JMSZXIL2BW4)
